@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 120px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+.form-group h2{
+    margin-left: 20%;
+}
+#idr{
+    margin-left: 21%;
+}
+#thk{
+  margin-left: 8%;
+}
+#vot img{
+    margin-left: 21%;
+}
+#cheif span{
+  color: red;
+  
+}
+#cheif{
+    margin-left: 8%;
+}
+#nm{
+    margin-left: 4%;
+}
+</style>
+<body>
+    <h1>Elec<span style="color: red;" >tro</span></h1>
+  <form action="/submit" method="post">
+    <div class="form-group">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <h2><span>Voting Sucessfull</span></h2>
+      <!-- <label for="message">Your Message:</label>
+      <textarea id="message" name="message" required></textarea> -->
+    </div>
+
+    <section id="idr">
+        <h4>Referance Id:5054tyqi</h4>
+    </section>
+    <section id="thk">
+        <h5>Thank you for Using Our Electro Voting System</h5>
+    </section>
+
+    <section id="vot">
+        <img src="http://odishasamaya.com/wp-content/uploads/2016/03/TNelections-app-Launched-by-EC-SAMAYA.jpg" width="200"  height="200">
+    </section>
+    <section id="cheif" style="display: flex;">
+        <h4>
+            Elec<span>tro</span>
+            Develop<span>er : </span>
+        </h4>
+        <h4 id="nm">
+            Sathish Kumar V
+        </h4>
+    </section>
+    <button type="submit" id="submit"  onclick="printFunction()">Generate Slip</button>
+    <script>
+          function printFunction() { 
+            window.print(); 
+          }
+    </script>
+    <!-- <button type="submit" id="submit" >Generate Slip</button> -->
+    
+  </form>
+</body>
+</html>
